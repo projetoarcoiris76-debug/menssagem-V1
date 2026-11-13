@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#050914">
-  <title>ORBIT — Mensagens</title>
+  <title>ORBIT MAX IG — Mensagens</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
   <aside class="sidebar">
     <div class="brand">
       <span class="brand-mark">✦</span>
-      <span>ORBIT</span>
+      <span>ORBIT MAX IG</span>
     </div>
 
     <button class="nav-item active">▣ <span>Conversas</span></button>
@@ -60,4 +60,114 @@
           <small>Seu status</small>
         </button>
 
-        <button class
+        <button class="story" data-story="Luna">
+          <span class="story-ring"><i class="avatar purple">L</i></span>
+          <small>Luna</small>
+        </button>
+
+        <button class="story" data-story="Rafael">
+          <span class="story-ring"><i class="avatar blue">R</i></span>
+          <small>Rafael</small>
+        </button>
+
+        <button class="story" data-story="Maya">
+          <span class="story-ring"><i class="avatar gold">M</i></span>
+          <small>Maya</small>
+        </button>
+      </div>
+    </section>
+
+    <div class="section-title chats-title">
+      <span>RECENTES</span>
+      <span class="tiny-count">3</span>
+    </div>
+
+    <div class="conversation-list" id="conversationList">
+
+      <button class="conversation selected" data-chat="luna">
+        <span class="avatar purple">L</span>
+        <span class="conversation-copy">
+          <b>Luna</b>
+          <small>Você viu isso? ✨</small>
+        </span>
+        <span class="conversation-meta">
+          <small>10:42</small>
+          <i class="unread">2</i>
+        </span>
+      </button>
+
+      <button class="conversation" data-chat="rafael">
+        <span class="avatar blue">R</span>
+        <span class="conversation-copy">
+          <b>Rafael</b>
+          <small>Vamos jogar mais tarde?</small>
+        </span>
+        <span class="conversation-meta">
+          <small>09:18</small>
+        </span>
+      </button>
+
+      <button class="conversation" data-chat="maya">
+        <span class="avatar gold">M</span>
+        <span class="conversation-copy">
+          <b>Maya</b>
+          <small>Foto enviada</small>
+        </span>
+        <span class="conversation-meta">
+          <small>Ontem</small>
+        </span>
+      </button>
+
+    </div>
+  </main>
+
+  <section class="chat-panel">
+
+    <header class="chat-header">
+      <div class="chat-person">
+        <span class="avatar purple" id="activeAvatar">L</span>
+        <div>
+          <b id="activeName">Luna</b>
+          <small><i class="online-dot"></i> online agora</small>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button class="icon-btn">⌕</button>
+        <button class="icon-btn" id="moreBtn">•••</button>
+      </div>
+    </header>
+
+    <div class="chat-body" id="chatBody">
+      <div class="date-divider"><span>HOJE</span></div>
+      <div class="bubble received">Oii! Você viu a ideia nova do site? ✨</div>
+      <div class="bubble sent">Ainda não! Me conta 👀</div>
+      <div class="bubble received">Você viu isso? ✨</div>
+    </div>
+
+    <form class="composer" id="messageForm">
+      <button type="button" class="attach-btn" id="attachBtn">＋</button>
+      <input id="messageInput" autocomplete="off" placeholder="Escreva uma mensagem...">
+      <button class="send-btn" type="submit">➤</button>
+    </form>
+
+    <p class="demo-note">ORBIT MAX IG • Seu espaço de comunicação</p>
+
+  </section>
+
+</div>
+
+<div class="modal-backdrop hidden" id="modalBackdrop">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">×</button>
+    <p class="eyebrow">PERSONALIZAÇÃO</p>
+    <h2 id="modalTitle">Editar apelido</h2>
+    <p id="modalDescription">Escolha como esse contato aparece para você.</p>
+    <input id="modalInput" maxlength="24" placeholder="Digite um apelido">
+    <button class="primary-btn" id="modalSave">Salvar</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
